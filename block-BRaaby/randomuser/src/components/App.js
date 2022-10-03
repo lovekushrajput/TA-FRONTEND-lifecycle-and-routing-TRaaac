@@ -8,14 +8,22 @@ class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            data: null
+            data: null,
+            isLoading: false
         }
     }
+
+    handleLoading = () => {
+        this.setState({
+            isLoading: false
+        })
+    }
+
 
     fetch = () => {
         fetch('https://randomuser.me/api/')
             .then(res => res.json())
-            .then(data => this.setState({ data: data.results }))
+            .then(data => this.setState({ data: data.results, isLoading: true }))
     }
 
     componentDidMount() {
@@ -28,7 +36,7 @@ class App extends React.Component {
         }
         return (
             <>
-                <Random info={this.state.data[0]} fetch={this.fetch} data={this.state.data} />
+                <Random info={this.state.data[0]} fetch={this.fetch} handleLoading={this.handleLoading} isLoading={this.state.isLoading} />
             </>
         )
     }
