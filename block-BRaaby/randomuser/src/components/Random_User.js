@@ -10,11 +10,15 @@ class Random_User extends Component {
 
     handleClick = () => {
         this.props.fetch()
+        this.props.handleLoading()
         this.setState({
             userInfo: ''
         })
 
+
     }
+
+
     render() {
         let { picture, login, phone, dob, email, location } = this.props.info
         let { name, value } = this.state.userInfo
@@ -42,7 +46,7 @@ class Random_User extends Component {
                             <i className="fa-solid fa-lock" data-name='password' data-value={login.password}></i>
                         </div>
                         <div className='flex justify-center'>
-                            <button onClick={this.handleClick}> {this.props.data ? 'Random User' : 'loading..'}</button>
+                            <button onClick={this.handleClick}> {this.props.isLoading ? 'Random User' : 'loading..'}</button>
                         </div>
                     </div>
 
