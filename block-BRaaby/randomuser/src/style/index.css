@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* general classes */
+.width-full {
+  width: 100%;
+}
+
+.height-half {
+  height: 55vh;
+}
+
+.height-40 {
+  height: 45vh;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-2 {
+  margin: 2rem 0;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-evenly;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+/*  */
+
+.parent {
+  position: relative;
+}
+.c---1 {
+  background-color: rgb(36, 41, 61);
+}
+
+.c---2 {
+  background-color: rgb(242, 247, 255);
+}
+
+.c---main {
+  background-color: white;
+  width: 52%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  height: 65vh;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+.col---main {
+  background-color: rgb(242, 247, 255);
+  height: 20vh;
+  border-bottom: 1.4px solid rgb(212, 212, 208);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(195, 195, 196);
+  width: 7.6rem;
+  height: 7.6rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2rem;
+
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+p {
+  color: rgb(51, 79, 94);
+margin-top: 4rem;
+}
+
+h2 {
+  color: rgb(19, 36, 77);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+i {
+  /* display: inline-block; */
+  color: rgb(96, 126, 128);
+  font-size: 1.7rem;
+}
+
+button {
+  text-align: center;
+  color: white;
+  background-color: rgb(90, 160, 201);
+  cursor: pointer;
+  border: 1px solid rgb(25,97,172);
+  text-transform: uppercase;
+  padding: 0.4rem 0.7rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: rgb(15, 51, 85);
+  color: rgb(25,97,172);
+
+}
